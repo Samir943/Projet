@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services </title>
+    <link rel="stylesheet" href="services.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>Accessoires</span>Informatiques</p>
+        </div>
+        <ul class="menu">
+            <li><a href="dex.html">Acceuil</a></li>
+            <li><a href="accessoire.html">Accessoiores</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login_btn"><a href="login_form.php">Connexion</a></button>
+    </header>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+   
+
+   <!-- section services -->
+
+   <section id="services">
+    <h1 class="section_title">Nos Services</h1>
+    <div class="list_services">
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Assistance technique</h3>
+            <p> Proposez un service d’assistance pour aider les clients à résoudre des problèmes techniques liés aux  produits informatiques. Cela peut inclure des guides de dépannage, des FAQ et un support par e-mail ou chat</p>
+             
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Maintenance et réparation</h3>
+            <p>Mettez en avant vos services de maintenance et de réparation. Si un client a besoin de réparer un ordinateur ou de remplacer des pièces, proposez des solutions adaptées</p>
+             
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Livraison rapide et suivi des commandes</h3>
+            <p>Assurez-vous que vos clients sont informés du statut de leur commande et proposez une livraison rapide et fiable</p>
+             
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Consultation en Matériel Informatique</h3>
+            <p>Offrir des conseils personnalisés pour aider les clients à choisir les meilleurs accessoires en fonction de leurs besoins spécifiques</p>
+             
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Solutions de Sécurité Informatique</h3>
+            <p>Proposition de solutions de sécurité telles que l'installation d'antivirus, la configuration de pare-feu, et la sauvegarde des données</p>
+             
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Personnalisation et Assemblage sur Mesure</h3>
+            <p>Service d'assemblage sur mesure de PC selon les spécifications et besoins spécifiques des clients</p>
+             
+        </div>
+    </div>
+</section>
+    
+
+    
+<footer>
+    <p>Accessoiores Informatiques Copyright 2024 </p>
+</footer>
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>

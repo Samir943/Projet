@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="connexion.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>Accessoires</span>Informatiques</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="accessoire.html">Accessoires</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login_btn">Connexion</button>
+    </header>
+    
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- section connexion -->
+    <section id="login">
+        <h1 class="section_title">Connexion</h1>
+        <div class="login_form_div">
+            <div class="login_form">
+                <h3>Se connecter à votre compte</h3>
+                <form action="#">
+                    <input type="email" name="usermail" placeholder="Entrer votre email" class="box" required>
+                    <input type="password" name="password" placeholder="Enter votre mot de passe" class="box" required>
+                    <input type="submit" value="Se connecter">
+                </form>
+                <br>
+                <p>Vous n'avez pas de compte?</p> 
+                <br>
+                <h2 class="compte"><a href="log.html">Créer un compte</a></h2>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Accessoires Informatiques Copyright 2024</p>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+    </script>
+</body>
+</html>

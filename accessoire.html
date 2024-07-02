@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicules </title>
+    <link rel="stylesheet" href="accessoire.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>Accessoires</span>Informatiques</p>
+        </div>
+        <ul class="menu">
+            <li><a href="dex.html">Acceuil</a></li>
+            <li><a href="accessoire.html">Accessoiores</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login_btn"><a href="login_form.php">Connexion</a></button>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+
+
+
+
+     <!-- section vehicule -->
+
+     <section id="cars">
+        <h1 class="section_title">Nos Accessoires</h1>
+        <div class="images">
+            <ul>
+                <li class="car">
+                   <div>
+                       <img src="ECRAN.jpg" alt="">
+                   </div>
+                   <span>ECRAN</span>
+                   <span class="prix">300$</span>
+                   <a href="payment.html">ACHETER MAINTENANT</a>
+                </li>
+                <li class="car">
+                    <div>
+                        <img src="UNITER CENTRAL.jpg" alt="">
+                    </div>
+                    <span>UNITE CENTRALE</span>
+                    <span class="prix">500$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="CLAVIER LUMINEUX.jpg" alt="">
+                    </div>
+                    <span>CLAVIER NUMERIQUE</span>
+                    <span class="prix">150$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="SOURIS.jpg" alt="">
+                    </div>
+                    <span>SOURIS</span>
+                    <span class="prix">80$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="BATTERIE.jpg" alt="">
+                    </div>
+                    <span>BATTERIE</span>
+                    <span class="prix">60$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="CLE USB.jpg" alt="">
+                    </div>
+                    <span>CLE USB</span>
+                    <span class="prix">15$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="CABRE HDMI.jpg" alt="">
+                    </div>
+                    <span>CABLE HDMI</span>
+                    <span class="prix">50$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="CHARGEUR.jpg" alt="">
+                    </div>
+                    <span>CHARGEUR</span>
+                    <span class="prix">100$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="PROCESSEUR.jpg" alt="">
+                    </div>
+                    <span>PROCESSEUR</span>
+                    <span class="prix">400$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="ROUTEUR WIFI.jpg" alt="">
+                    </div>
+                    <span>ROUTEUR WIFI</span>
+                    <span class="prix">300$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="IMPRIMENTE.jpg" alt="">
+                    </div>
+                    <span>IMPRIMANTE</span>
+                    <span class="prix">500$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="DISQUE DUR.jpg" alt="">
+                    </div>
+                    <span>DISQUE DUR</span>
+                    <span class="prix">400$</span>
+                    <a href="payment.html">ACHETER MAINTENANT</a>
+                 </li>
+            </ul>
+        </div>
+    </section>
+
+
+    
+   
+ 
+
+    <footer>
+        <p>Accessoiores Informatiques Copyright 2024 </p>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>

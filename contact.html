@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts </title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>Accessoires</span>Informatiques</p>
+        </div>
+        <ul class="menu">
+            <li><a href="dex.html">Acceuil</a></li>
+            <li><a href="accessoire.html">Accessoiores</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login_btn"><a href="login_form.php">Connexion</a></button>
+    </header>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    
+
+    <!-- section contact -->
+
+    <section id="contact">
+        <h1 class="section_title">Contacts </h1>
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>Notre Adresse</h3>
+                <!-- Map -->
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d63442.25466440358!2d2.395420627256206!3d6.3758032152003805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smotel%20cit%C3%A9%20des%20amis%20rue%201640%20avotrou%20cotonou!5e0!3m2!1sfr!2sbj!4v1715246395027!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            </div>
+
+            <div class="form_contact">
+                <h3>Envoyer un message</h3>
+                <form action="#">
+                    <input type="text"placeholder="Nom">
+                    <input type="email"placeholder="Adresse Mail">
+                    <input type="text"placeholder="Objet">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+
+    <footer>
+        <p>Accessoiores Informatiques Copyright 2024 </p>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>

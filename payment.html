@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement</title>
+    <link rel="stylesheet" href="payment.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- header  -->
+    <header>
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>Accessoires</span>Informatiques</p>
+        </div>
+        <ul class="menu">
+            <li><a href="dex.html">Acceuil</a></li>
+            <li><a href="accessoire.html">Accessoires</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="login_btn"><a href="login_form.php">Connexion</a></button>
+    </header>
+    
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- section paiement -->
+    <section id="payment">
+        <h1 class="section_title">Paiement</h1>
+        <div class="payment_form_div">
+            <div class="payment_form">
+                <h3>Informations de Paiement</h3>
+                <form id="payment-form" action="#">
+                    <div id="card-info">
+                        <input type="text" placeholder="Nom sur la carte">
+                        <input type="text" placeholder="Numéro de carte">
+                        <input type="text" placeholder="Date d'expiration (MM/AA)">
+                        <input type="text" placeholder="CVV">
+                    </div>
+                    
+                    <div id="paypal-info" style="display:none;">
+                        <input type="email" placeholder="Email PayPal">
+                    </div>
+                    <input type="text" placeholder="Adresse de livraison">
+                    <input type="text" placeholder="Ville">
+                    <input type="text" placeholder="Code Postal">
+                    <input type="submit" value="Payer">
+                </form>
+                <div class="payment_methods">
+                    <h4>Moyens de paiement acceptés</h4>
+                    <img src="paypal.jfif" alt="PayPal" onclick="showPaymentInfo('paypal')">
+                    <img src="mastercard.jfif" alt="MasterCard" onclick="showPaymentInfo('card')">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Accessoires Informatiques Copyright 2024</p>
+    </footer>
+
+    <script>
+        //menu responsive code JS
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+        }
+
+        // Afficher les informations de paiement en fonction du moyen de paiement
+        function showPaymentInfo(method) {
+            var cardInfo = document.getElementById('card-info');
+            var paypalInfo = document.getElementById('paypal-info');
+
+            if (method === 'paypal') {
+                cardInfo.style.display = 'none';
+                paypalInfo.style.display = 'block';
+            } else {
+                cardInfo.style.display = 'block';
+                paypalInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
